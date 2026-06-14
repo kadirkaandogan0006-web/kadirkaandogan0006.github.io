@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi | Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar">
+        <div class="logo">PORTFOLYO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#simulation">Simülasyon</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ana Banner (Hero Section) -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>WEB SITESI</h1>
+            <p>Geliştirilen projeler ve laboratuvar simülasyon ekranı.</p>
+            <a href="#projects" class="btn">Projeleri Keşfet</a>
+        </div>
+    </header>
+
+    <!-- İstatistik Paneli -->
+    <section class="stats">
+        <div class="stat-box"><h3>3+</h3><p>Geliştirilen Proje</p></div>
+        <div class="stat-box"><h3>%100</h3><p>Performans odaklı kod</p></div>
+    </section>
+
+    <!-- Projeler (Sadece İndirme Butonları) -->
+    <section id="projects" class="projects-section">
+        <h2>Projeler</h2>
+        <div class="projects-grid">
+            
+            <!-- 1. Proje İndirme Kartı -->
+            <div class="project-card">
+                <div class="card-icon">📦</div>
+                <h3>Proje 1</h3>
+                <p>Proje dosyalarını bilgisayarınıza indirmek için aşağıdaki butonu kullanabilirsiniz.</p>
+                <a href="https://github.com/kadirkaandogan0006-web/kadirkaandogan0006-web.github.io/raw/main/dosya1.zip" class="btn-download" download>Projeyi İndir</a>
+            </div>
+
+            <!-- 2. Proje İndirme Kartı -->
+            <div class="project-card">
+                <div class="card-icon">📦</div>
+                <h3>Proje 2</h3>
+                <p>Proje dosyalarını bilgisayarınıza indirmek için aşağıdaki butonu kullanabilirsiniz.</p>
+                <a href="https://github.com/kadirkaandogan0006-web/kadirkaandogan0006-web.github.io/raw/main/dosya2.zip" class="btn-download" download>Projeyi İndir</a>
+            </div>
+
+            <!-- 3. Proje İndirme Kartı -->
+            <div class="project-card">
+                <div class="card-icon">📦</div>
+                <h3>Proje 3</h3>
+                <p>Proje dosyalarını bilgisayarınıza indirmek için aşağıdaki butonu kullanabilirsiniz.</p>
+                <a href="https://github.com/kadirkaandogan0006-web/kadirkaandogan0006-web.github.io/raw/main/dosya3.zip" class="btn-download" download>Projeyi İndir</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Canlı Simülasyon Önizleme Paneli -->
+    <section id="simulation" class="sim-section">
+        <h2>Laboratuvar Ekranı</h2>
+        <p class="sim-desc">Aşağıdaki panelden web tabanlı mini hücre popülasyonu simülasyonunu canlı olarak kontrol edebilirsin.</p>
+        
+        <div class="sim-container">
+            <div class="sim-control-panel">
+                <div class="control-group">
+                    <label>Hücre Sayısı: <span id="cell-count-text">10</span></label>
+                    <input type="range" id="cell-slider" min="5" max="50" value="10">
+                </div>
+                <button id="mitosis-btn" class="btn-sm">Mitoz Tetikle (Bölünme)</button>
+                <button id="reset-btn" class="btn-sm btn-danger">Simülasyonu Sıfırla</button>
+            </div>
+            
+            <div class="sim-screen" id="sim-screen">
+                <!-- Hücreler JS ile buraya eklenecek -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
